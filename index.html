@@ -19,27 +19,27 @@
     </section>
 
     <section class="main-content">
-      <p>In my past assignment I learned the concepts behind neural networks and then implemented my own. In this project I will again be implementing neural networks; however, instead of implementing my own code, I will be learning to work with neural network libraries. <a href="https://www.youtube.com/watch?v=Psp95I--hes&amp;feature=youtu.be">Here</a> is a screen cast I created going over my work in this assignment. </p>
+      <p>In my past assignment I learned the concepts behind neural networks and then implemented my own. In this project I will again be implementing neural networks; however, instead of implementing my own code, I will be learning to work with neural network libraries. <a href="https://www.youtube.com/watch?v=Psp95I--hes&amp;feature=youtu.be">Here</a> is a screen cast I created going over my work in this project. </p>
 
 <h2>
 <a id="deep-learning-libraries" class="anchor" href="#deep-learning-libraries" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deep Learning Libraries</h2>
 
-<p>When actually working in deep learning, you generally do not write all of your own code. What a library does exactly is best explained by looking at an equation for a neural net again:</p>
+<p>When actually working in deep learning, you generally do not write all of your own code, instead you utilize deep learning libraries. What a library does is best explained by looking at an equation for a neural net:</p>
 
 <p><img src="https://raw.githubusercontent.com/georgewildridge/CS231n/master/Website%20Pictures/linear.png" alt="Linear classifier"></p>
 
-<p>With f representing some function and x representing some input. What is changing here is f, and that is what you use a neural network library for. Applying different functions to your data will yield different results, so a deep learning library stores a whole bunch of functions that you can call easily. Further, libraries also make it really easy to mix and match these functions on top of each other and form multiple layer neural networks:</p>
+<p>With f representing some function and x representing some input. What is changing here is f, and that is why you use a deep learning library for. Applying different functions to your data will yield different results and, if done correctly, better results. A deep learning library stores a whole bunch of functions that can be easily accessed. Further, libraries also make it really easy to mix and match these functions on top of each other and form multiple layer neural networks:</p>
 
 <p><img src="https://raw.githubusercontent.com/georgewildridge/CS231n/master/Website%20Pictures/theelayer.png" alt="3 layer"></p>
 
 <p>What this allows you to do is "design" your neural networks, an idea I have not yet learned how to do but will definitely get to over the summer. For me this assignment was just about learning how to use a library. It is easier said than done, as figuring out how to install and then use the libraries can be tedious. My first goal was to run a neural network on the MNIST dataset using the deep learning library <a href="http://torch.ch/">torch</a>. In about 6 hours I was able to accomplish this using this <a href="http://dp.readthedocs.io/en/latest/neuralnetworktutoria%20l/index.html">tutorial</a>. In which I train a neural network on the MNIST dataset. The results after training were an error of  0.0008%. Better than a human!</p>
 
-<p>I also spent a few hours attempting to get another deep learning library called <a href="http://caffe.berkeleyvision.org/">Caffe</a> up and running with the MNIST dataset. However, installation has proved tricky so far and so I will finish it in the future. </p>
+<p>I also spent a few hours attempting to get another deep learning library called <a href="http://caffe.berkeleyvision.org/">Caffe</a> up and running with the MNIST dataset. However, installation has proved tricky so I will finish it in the future. </p>
 
 <h2>
 <a id="deep-learning-on-lord-of-the-rings" class="anchor" href="#deep-learning-on-lord-of-the-rings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deep learning on Lord of the Rings!</h2>
 
-<p>After this I found a really cool <a href="https://github.com/karpathy/char-rnn">project</a> that Andrej Karpathy , the guy who taught CS231n, created using torch that trained a neural network on text and then had the network write a couple of lines. He trained a neural network on Shakespeare and got some awesome results so I figured I would give it a try using the lord of the rights trilogy. After 1000 iterations it outputted:</p>
+<p>After this I found a really cool <a href="https://github.com/karpathy/char-rnn">project</a> that Andrej Karpathy , the graduate student who taught CS231n, created using torch that trained a neural network on a large body of text and then attempted to write.  He trained a neural network on Shakespeare and got some awesome results so I figured I would give it a try using the Lord of the Rings trilogy. After 1000 iterations it outputted:</p>
 
 <pre><code>the itt no pounters here the casmose on the fillower.He mare and hail spide and quietiiss, and the smirnol. But not in sipar Back! the ever along what we ho angs headd heating and lave t he dromned.
 Thearine in had a vadeereled word Sarcore of wave heTouch Ho bout! Lethlost clomend over in hizl whe for fagh to lake it for moby, And
@@ -84,12 +84,12 @@ the ring
 looking more to be no more. Nor change or markwours again, hu! Or if you think I have found to me. This valley reachwate mean through the road 
 </code></pre>
 
-<p>This was really cool because the improvement that the neural network makes is visible! The difference between the 1000th iteration and the 5000th iteration is astounding. By 5000 iterations the network has learned to form English words, not perfectly, and it is beginning to decipher the grammar within the English language. </p>
+<p>The visible improvement the neural networks made was really cool! The difference between the 1000th iteration and the 5000th iteration is astounding. By 5000 iterations the network has learned to form English words well, and it is beginning to decipher the nuance of grammar within the English language. </p>
 
 <h2>
 <a id="conclusion" class="anchor" href="#conclusion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Conclusion</h2>
 
-<p>I am really happy with the results of this project as I believe it served as a great introduction into learning to work with a deep learning library. It has also illuminated some possible future work for me to do like learning how to design a neural network and looking into other libraries. </p>
+<p>I am really happy with the results of this project as I believe it served as a great introduction into learning to work with a deep learning library. It has also illuminated some possible future work for me to do like learning how to design a neural network and looking into other deep learning libraries. </p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/georgewildridge/CS231nProject">Cs231nproject</a> is maintained by <a href="https://github.com/georgewildridge">georgewildridge</a>.</span>
