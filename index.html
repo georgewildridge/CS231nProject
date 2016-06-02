@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cs231nproject by georgewildridge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Cs231nproject</h1>
+      <h2 class="project-tagline">Final project for my directed study CS231n.</h2>
+      <a href="https://github.com/georgewildridge/CS231nProject" class="btn">View on GitHub</a>
+      <a href="https://github.com/georgewildridge/CS231nProject/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/georgewildridge/CS231nProject/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p>In my past assignment I learned the concepts behind neural networks and then implemented my own. In this project I will again be implementing neural networks; however, instead of implementing my own code, I will be learning to work with neural network libraries. </p>
+
+<h2>
+<a id="deep-learning-libraries" class="anchor" href="#deep-learning-libraries" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deep Learning Libraries</h2>
+
+<p>When actually working in deep learning, you generally do not write all of your own code. What a library does exactly is best explained by looking at an equation for a neural net again:</p>
+
+<p><img src="https://raw.githubusercontent.com/georgewildridge/CS231n/master/Website%20Pictures/linear.png" alt="Linear classifier"></p>
+
+<p>With f representing some function and x representing some input. What is changing here is f, and that is what you use a neural network library for. Applying different functions to your data will yield different results, so a deep learning library stores a whole bunch of functions that you can call easily. Further, libraries also make it really easy to mix and match these functions on top of each other and form multiple layer neural networks:</p>
+
+<p><img src="https://raw.githubusercontent.com/georgewildridge/CS231n/master/Website%20Pictures/theelayer.png" alt="3 layer"></p>
+
+<p>What this allows you to do is "design" your neural networks, an idea I have not yet learned how to do but will definitely get to over the summer. For me this assignment was just about learning how to use a library. It is easier said than done, as figuring out how to install and then use the libraries can be tedious. My first goal was to run a neural network on the MNIST dataset using the deep learning library <a href="http://torch.ch/">torch</a>. In about 6 hours I was able to accomplish this using this <a href="http://dp.readthedocs.io/en/latest/neuralnetworktutoria%20l/index.html">tutorial</a>. In which I train a neural network on the MNIST dataset. The results after training were </p>
+
+<p>I also spent a few hours attempting to get another deep learning library called <a href="http://caffe.berkeleyvision.org/">Caffe</a> up and running with the MNIST dataset. However, installation has proved tricky so far and so I will finish it in the future. </p>
+
+<h2>
+<a id="deep-learning-on-lord-of-the-rings" class="anchor" href="#deep-learning-on-lord-of-the-rings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deep learning on Lord of the Rings!</h2>
+
+<p>After this I found a really cool <a href="https://github.com/karpathy/char-rnn">project</a> that Andrej Karpathy , the guy who taught CS231n, created using torch that trained a neural network on text and then had the network write a couple of lines. He trained a neural network on Shakespeare and got some awesome results so I figured I would give it a try using the lord of the rights trilogy. After 1000 iterations it outputted:</p>
+
+<pre><code>the itt no pounters here the casmose on the fillower.He mare and hail spide and quietiiss, and the smirnol. But not in sipar Back! the ever along what we ho angs headd heating and lave t he dromned.
+Thearine in had a vadeereled word Sarcore of wave heTouch Ho bout! Lethlost clomend over in hizl whe for fagh to lake it for moby, And
+</code></pre>
+
+<p>2000 iterations:</p>
+
+<pre><code>fert; and they ithersed: whiits heme pacching sow. In the ring Picpl of the Lount heed plang wiet agetury turn-reveslous. I am jope over the younce by wasgancly the drey nepurst had ppinings. Then wery south a
+drift. I the stommband
+light then land, shat it swall, sowenthe
+frodingtell, from there mark be mounto amight truge light things. But it trick
+</code></pre>
+
+<p>3000 iterations: </p>
+
+<pre><code>sh. He stooded to him. He could folk on the quiet him, and their comfant to the mole of the fither-leaves of Bag Forn led the ploce still made, howt
+of the Inlady that with had feir yards of the party and far ever or smill, and
+in the days were looked at out of hissoftle landering
+evil and other hobbits shust and other and far knowir that in the tumber of the Forest the
+hobbits for the
+</code></pre>
+
+<p>4000 iterations:</p>
+
+<pre><code>It shilld he did not get out of the mists, and the blue, side of Pippin when the griving over the stone if he turned between fair.
+Not destentes
+in the Wise moved it. The
+bidden was said, and filled on foot breath-forts.
+The hobbits
+would make through the precetury,
+Mo, though
+Sprence
+shoulders could hust be time be shot that have been any south and had in 
+</code></pre>
+
+<p>5000 iterations:</p>
+
+<pre><code>sh. It should not find him them all the path, like silence, and
+neighed in the honest in!20
+the fellowship of
+the ring
+looking more to be no more. Nor change or markwours again, hu! Or if you think I have found to me. This valley reachwate mean through the road 
+</code></pre>
+
+<p>This was really cool because the improvement that the neural network makes is visible! The difference between the 1000th iteration and the 5000th iteration is astounding. By 5000 iterations the network has learned to form English words, not perfectly, and it is beginning to decipher the grammar within the English language. </p>
+
+<h2>
+<a id="conclusion" class="anchor" href="#conclusion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Conclusion</h2>
+
+<p>I am really happy with the results of this project as I believe it served as a great introduction into learning to work with a deep learning library. It has also illuminated some possible future work for me to do like learning how to design a neural network and looking into other libraries. </p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/georgewildridge/CS231nProject">Cs231nproject</a> is maintained by <a href="https://github.com/georgewildridge">georgewildridge</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
